@@ -1,0 +1,24 @@
+{
+  "name": "is-this-correct",
+  "version": "0.0.1",
+  "description": "Alpha validation functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SelimAbidin/is-this-correct.git"
+  },
+  "keywords": [
+    "validation",
+    "valid",
+    "isvalid"
+  ],
+  "author": "Selim Abidin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SelimAbidin/is-this-correct/issues"
+  },
+  "homepage": "https://github.com/SelimAbidin/is-this-correct#readme"
+}
