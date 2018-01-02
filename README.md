@@ -3,4 +3,30 @@
 [![Build Status](https://travis-ci.org/SelimAbidin/is-this-correct.svg?branch=master)](https://github.com/SelimAbidin/isCCW)
 
 
-This library is in development stage
+this-is-correct library is a light package of useful validation functions
+
+###### is this a mail adress?
+```js
+const {email} = require('is-this-correct')
+email('testmail@mymailservices.com') // true
+email('testmail@mymailservices.com.tr') // true
+email('@mymailservices.com') // false
+email('test@mymailservices') // false
+```
+
+
+###### is this least 6 character?
+```js
+const {least6Char} = require('is-this-correct')
+least6Char('123456') // true
+least6Char('1234') // false
+least6Char(123456) // true
+least6Char(12345) // false
+```
+
+###### is this a function?
+```js
+const {isFunction} = require('is-this-correct')
+let testFnc = function () { }
+isFunction(testFnc) // true
+```

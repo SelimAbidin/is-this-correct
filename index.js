@@ -42,5 +42,3 @@ module.exports = {
       least6Char,
       isFunction
 }
-
-
