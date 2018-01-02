@@ -1,5 +1,5 @@
 var assert = require('assert');
-var {isStringEmail, isFunction, least6Char} = require('./')
+var {isStringEmail, email, isFunction, least6Char} = require('./')
 
 
 describe('isStringEmail', function() { 
@@ -18,6 +18,26 @@ describe('isStringEmail', function() {
 
       it('String should be mail : ysabidin@gmail.com.tr ', function() {
             assert.equal(true, isStringEmail("ysabidin@gmail.com.tr"));
+      })
+
+})
+
+describe('email', function() { 
+
+      it('String should be mail : ysabidin@gmail.com ', function() {
+            assert.equal(true, email('ysabidin@gmail.com'))
+      })
+
+      it('String should not be mail : ysa bidin@gmail.com ', function() {
+            assert.equal(false, email("ysa bidin@gmail.com"))
+      })
+
+      it('String should not be mail : ysabidin@gmailcom ', function() {
+            assert.equal(false, email("ysabidin@gmailcom"));
+      })
+
+      it('String should be mail : ysabidin@gmail.com.tr ', function() {
+            assert.equal(true, email("ysabidin@gmail.com.tr"));
       })
 
 })
