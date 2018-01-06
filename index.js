@@ -36,9 +36,22 @@ function isFunction (value) {
 }
 
 
+/**
+ * returns true if it is string and not empty.
+ * 
+ * @param {String} value 
+ * @returns {Boolean}
+ */
+function isStringEmpty(value) {
+      return !(value !== undefined && value !== null && value.length > 0 && /[^\s]/.test(value))
+}
+
+
+
 module.exports = {
       isStringEmail,
       email,
       least6Char,
-      isFunction
+      isFunction,
+      isStringEmpty
 }

@@ -1,5 +1,5 @@
 var assert = require('assert');
-var {isStringEmail, email, isFunction, least6Char} = require('./')
+var {isStringEmail, email, isFunction, least6Char, isStringEmpty} = require('./')
 
 
 describe('isStringEmail', function() { 
@@ -86,3 +86,48 @@ describe('isFunction', function() {
       })
    
 })
+
+describe('isStringEmpty', function() { 
+
+
+
+      it('Testing "test" ', function() {
+            let test = "test" 
+            assert.equal(false, isStringEmpty(test))
+      })
+
+      it('Testing " test" ', function() {
+            let test = " test"
+            assert.equal(false, isStringEmpty(test))
+      })
+
+      it('Testing "  " ', function() {
+            let test  = "  "
+            assert.equal(true, isStringEmpty(test))
+      })
+
+      it('Testing "" ', function() {
+            let test  = ""
+            assert.equal(true, isStringEmpty(test))
+      })
+
+
+      it('Testing " test  " ', function() {
+            let test  = " test  "
+            assert.equal(false, isStringEmpty(test))
+      })
+
+      it('Testing "0" ', function() {
+            let test  = "0"
+            assert.equal(false, isStringEmpty(test))
+      })
+      
+      it('Testing "12345" ', function() {
+            let test  = "12345"
+            assert.equal(false, isStringEmpty(test))
+      })
+   
+})
+
+
+

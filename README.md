@@ -30,3 +30,13 @@ const {isFunction} = require('is-this-correct')
 let testFnc = function () { }
 isFunction(testFnc) // true
 ```
+
+###### is this an empty string?
+```js
+const {isStringEmpty} = require('is-this-correct')
+let emptyString = ""
+isStringEmpty(emptyString) // true
+
+let str = "notempty"
+isStringEmpty(str) // false
+```
