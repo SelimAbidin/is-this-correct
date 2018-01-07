@@ -47,11 +47,24 @@ function isStringEmpty(value) {
 }
 
 
+/**
+ * returns true if value is number.
+ * 
+ * @param {String} value 
+ * @returns {Boolean}
+ */
+function isNumber(value) {
+      return value !== undefined && value !== null && !isNaN(value) && typeof value !== 'boolean' 
+}
+
+
+
 
 module.exports = {
       isStringEmail,
       email,
       least6Char,
       isFunction,
-      isStringEmpty
+      isStringEmpty,
+      isNumber
 }

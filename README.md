@@ -40,3 +40,12 @@ isStringEmpty(emptyString) // true
 let str = "notempty"
 isStringEmpty(str) // false
 ```
+
+###### is this a number?
+```js
+const {isFunction} = require('is-this-correct')
+let nmr = 1
+isNumber(nmr) // true
+let str = "ds"
+isNumber(str) // false
+```
