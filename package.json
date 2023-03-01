@@ -23,6 +23,6 @@
   "homepage": "https://github.com/SelimAbidin/is-this-correct#readme",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "^4.1.0"
+    "mocha": "^10.2.0"
   }
 }
